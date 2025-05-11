@@ -2,7 +2,7 @@
 
 This repository contains an automated testing framework built using [Playwright](https://playwright.dev/). 
 
-Test Cases can be found here: https://docs.google.com/spreadsheets/d/1sKFCXlWSjrFU0L4quZCsa1b_s2n4JN2HwBGIyICGLkA/edit?gid=0#gid=0
+Test Cases can be found here: https://zt.ms/11Zm
 ---
 
 ## 🚀 **Key Components**
