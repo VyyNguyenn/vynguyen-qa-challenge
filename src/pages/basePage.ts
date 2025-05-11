@@ -25,6 +25,10 @@ export default class BasePage {
     await this.logoutButton.click();
   }
 
+  async waitForTimeout(timeout: number) {
+    await this.page.waitForTimeout(timeout);
+  }
+
   async clickAndWaitForPageLoaded(locator: Locator) {
     await locator.click();
     await this.page.waitForLoadState('load');

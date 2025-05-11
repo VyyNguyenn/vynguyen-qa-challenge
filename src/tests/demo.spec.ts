@@ -2,8 +2,14 @@ import test, { expect } from "@playwright/test";
 import LoginPage from "../pages/LoginPage";
 import AdminPage from "../pages/AdminPage";
 import { VALID_PASSWORD, VALID_USERNAME } from "../utils/constants";
+import path from "path";
+import { decorateAllureTestReport } from '../utils/utils';
+
+const currentFolder = path.basename(__dirname);
+const currentFile = path.basename(__filename);
 
 test('Demo Test script', async ({ page }) => {
+    await decorateAllureTestReport(currentFolder, currentFile);
     const loginPage = new LoginPage(page);
     const adminPage = new AdminPage(page);
 
